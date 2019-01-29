@@ -6,7 +6,7 @@ class LanguagueSerializer(serializers.ModelSerializer):
     class Meta:
         model = Languague
         fields = ('id', 'url', 'name', 'paradigm')
-        depth = 1
+
 
 
 class ParadigmSerializer(serializers.ModelSerializer):
@@ -19,4 +19,4 @@ class ProgrammerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Programmer
         fields = ('id', 'url', 'name', 'Languague')
-        depth = 1
+
